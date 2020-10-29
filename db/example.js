@@ -25,4 +25,4 @@ const query2 = knex.insert([
 .returning("*")
 
 query2.then(result => { console.table(result);
-knex.destroy()});//for destroying connection we run knex.destroy
+knex.destroy()});//for destroying connection to database we run knex.destroy
