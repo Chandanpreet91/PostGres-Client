@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "chandanpreet": "echo \"Hi Chandanpreet\"",
-    "start":"node app.js",
+    "start": "node app.js",
     "db:create": "createdb --echo knex_demo ",
-     "db:drop" : "dropdb --if-exists --echo knex_demo",
-     "db:migrate":"knex migrate:latest",
-     "db:rollback":"knex migrate:rollback",
-     "db:reset":"npm run db:drop && npm run db:create && npm run db:migrate"
+    "db:drop": "dropdb --if-exists --echo knex_demo",
+    "db:migrate": "knex migrate:latest",
+    "db:rollback": "knex migrate:rollback",
+    "db:reset": "npm run db:drop && npm run db:create && npm run db:migrate"
   },
   "author": "Chandanpreet",
   "license": "ISC",
@@ -18,5 +18,8 @@
     "express": "^4.17.1",
     "knex": "^0.21.8",
     "pg": "^8.4.2"
+  },
+  "devDependencies": {
+    "faker": "^5.1.0"
   }
 }
