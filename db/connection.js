@@ -1,5 +1,5 @@
 //This loads the exported configuration object from our knexfile
-const knexfile = require("..knexfile");
+const knexfile = require("../knexfile");
 
 
 // This gets the knex client constructor, we use this to create
